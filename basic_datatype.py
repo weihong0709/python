@@ -3,4 +3,4 @@
 print(type(8))
 print(type(3.01))
 print(type('3.01'))
-print(type(false))
+print(type(False))
