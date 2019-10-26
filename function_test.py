@@ -19,18 +19,23 @@ def func_return_more():
 print(func_return_more()[0])
 print(func_return_more()[1])
 print(func_return_more()[2])
-#作用域，只有全局作用域和函数作用域
+#作用域，只有全局作用域和函数作用域,通过global在函数里面定义或者关联全局变量
 global_var=123
 def func_scope():
-    print(global_var)
+    global global_var
+    global_var = 234
+    global global_var2
+    global_var2='function global_var2'
     print(globals())
     i=3
     if(i>2):
-        internal_var = 'interal'
+        internal_var = 'internal'
     print(internal_var)
     print(locals())
 func_scope()
-#函数修改外部可变对象，会作用于外部对象
+print(global_var)
+print(global_var2)
+#函数修改外部可变对象，会作用于外部对象，字符串（数字）、元组不可变对象不会对外部有影响
 def func_args_scope(para):
     temp=list(para)
     temp.append(11)
@@ -60,6 +65,7 @@ def func_keyword_args(first,**others):
 
 func_keyword_args('first',name='liuweihong',age=2)
 
-
+#分配参数
+#1、通过*号可以将
 
 
