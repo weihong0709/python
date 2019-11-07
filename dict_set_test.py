@@ -38,3 +38,13 @@ print(d_sorted_by_key)
 d5={'a':4,'b':2,'c':3}
 d_sorted_by_value = sorted(d5.items(), key=lambda x: x[1]) # 根据字典值的升序排序
 print(d_sorted_by_value)
+#字典的遍历
+d = {'name': 'jason', 'dob': '2000-01-01', 'gender': 'male'}
+for k in d:  # 遍历字典的键
+    print(k)
+
+for v in d.values():  # 遍历字典的值
+    print(v)
+
+for k, v in d.items():  # 遍历字典的键值对
+    print('key: {}, value: {}'.format(k, v))

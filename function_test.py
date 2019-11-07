@@ -41,6 +41,11 @@ def func_args_scope(para):
     temp.append(11)
     temp2=[1,2]
     print(temp2)
+MIN_VALUE = 1
+MAX_VALUE = 10
+def validation_check(value):
+    MIN_VALUE += 1
+validation_check(5)
 
 paraList = [1,2,3]
 func_args_scope(paraList)
