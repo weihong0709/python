@@ -12,3 +12,8 @@ print(list(new_list))
 l = [1, 2, 3, 4, 5]
 product = reduce(lambda x, y: x * y, l)
 print(product)
+
+d = {'mike': 10, 'lucy': 2, 'ben': 30}
+
+print(sorted(d.items(),key=lambda x:x[0]))
+
