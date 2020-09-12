@@ -48,7 +48,8 @@ print(littleBird.get_age())
 littleBird.fly()
 
 class MemberCount:
-    members=0
+    members = 0
+
     def init(self):
         MemberCount.members+=1
 m1 = MemberCount()
