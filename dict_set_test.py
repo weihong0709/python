@@ -1,4 +1,4 @@
-#集合的创建
+#字典的创建
 d1 = {'name': 'jason', 'age': 20, 'gender': 'male'}
 d2 = dict({'name': 'jason', 'age': 20, 'gender': 'male'})
 d3 = dict([('name', 'jason'), ('age', 20), ('gender', 'male')])

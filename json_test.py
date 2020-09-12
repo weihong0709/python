@@ -15,7 +15,7 @@ original_params = json.loads(params_str)
 print('original_params type {},original_params:{}'.format(type(original_params),original_params))
 #读文件
 try:
-    with open('param2.json', 'r') as jsonfile:
+    with open('param.json', 'r') as jsonfile:
         jsonparam = json.load(jsonfile)
         print(jsonparam)
 except Exception as ex:
