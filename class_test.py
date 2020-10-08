@@ -1,3 +1,6 @@
+#!/usr/bin/python
+#-*-coding:utf-8-*-
+
 class Animals:
     # 构造函数，通过默认值初始化
     def __init__(self,name,age=20):
